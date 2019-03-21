@@ -10,6 +10,7 @@
     </aside>
     <div class="col-xs-8">
       <%= render 'microposts/microposts', microposts: @microposts %>
+      <%= render 'favorites/like_button', user: @user, micropost: @micropost %>
     </div>
   </div>
 <% else %>
